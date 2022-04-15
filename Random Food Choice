@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main(){
+	int choice;
+	printf("Enter a random number from 1 to 5 :  \n");
+	scanf("%d", &choice);
+	printf("Your food choice generated is...\n\n");
+	
+	switch(choice){
+		case 1 : printf("Food Item : Sandwich \n");
+		printf("Price : Rs. 149");
+		break;
+		case 2: printf("Food Item : Pizza \n");
+		printf("Price : Rs. 239");
+		break;
+		case 3 : printf("Food Item : Pasta \n");
+		printf("Price : Rs.179");
+		break;
+		case 4 : printf("Food Item : Burger");
+		printf("Price : Rs. 129");
+		break;
+		case 5 : printf("Food Item : French Fries \n");
+		printf("Price : Rs. 99");
+		break;
+		
+		default : printf("Enter a valid choice!!");
+	}
+	
+	return 0;	
+}
