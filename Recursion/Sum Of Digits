@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<stdlib.h>
+int n;
+int Sum(int);
+int main()
+{
+	int result;
+	printf("Enter a number, the sum of whose digits is to be determined :");
+	scanf("%d", &n);
+    result = Sum(n);
+	printf("The Sum of the digits of the number entered is : %d",result);
+}
+
+int Sum(int n)
+{
+	if (n==0)
+	return 0;
+	else
+	   return((n % 10) + Sum(n / 10));
+}
