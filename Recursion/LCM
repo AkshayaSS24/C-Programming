@@ -1,0 +1,22 @@
+#include<stdio.h>
+int a,b;
+int i=1;
+int LCM(int,int);
+int main()
+{
+	printf("Enter two integers : ");
+	scanf("%d%d", &a, &b);
+	int result = LCM(a,b);
+	printf("/n The LCM of the numbers is : %d ", result);
+}
+
+LCM(int a, int b){
+	  
+	  if(i%a==0 && i%b==0)
+	  return i;
+	  else 
+	  {
+	  i++;
+	  LCM(a,b);
+}
+}
